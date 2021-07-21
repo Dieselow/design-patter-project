@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net5.0": {
       "Microsoft.CodeCoverage/16.6.1": {
         "type": "package",
         "compile": {
@@ -1651,7 +1651,7 @@
       },
       "ESGI.DesignPattern.Projet/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
           "bin/placeholder/ESGI.DesignPattern.Projet.dll": {}
         },
@@ -5675,7 +5675,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    "net5.0": [
       "ESGI.DesignPattern.Projet >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.6.1",
       "xunit >= 2.4.1",
@@ -5699,14 +5699,14 @@
         "/Users/louisdumont/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "netcoreapp5.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0": {
+          "targetAlias": "netcoreapp5.0",
           "projectReferences": {
             "/Users/louisdumont/RiderProjects/Design Pattern/Projet/ESGI.DesignPattern.Projet/ESGI.DesignPattern.Projet/ESGI.DesignPattern.Projet.csproj": {
               "projectPath": "/Users/louisdumont/RiderProjects/Design Pattern/Projet/ESGI.DesignPattern.Projet/ESGI.DesignPattern.Projet/ESGI.DesignPattern.Projet.csproj"
@@ -5721,8 +5721,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
+      "net5.0": {
+        "targetAlias": "netcoreapp5.0",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -5755,16 +5755,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.10, 3.1.10]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

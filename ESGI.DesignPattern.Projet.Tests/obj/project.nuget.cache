@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Z590yrYP8nAMR5Yz8s7i9t6YDS1Q719Y3fsFTvsCxPSwPiTrZe8Z895c2MXJ7WxHxezuEe9WYUO8UPzCwLPxOg==",
+  "dgSpecHash": "c42Nr4eH9U0RDy38Y5WBJDFzCHTdkD8oTk2w3I3TE8a6BNNKbOuQX+IqmuHx/V/WtxJcDc6Tsb7/fQYjDV9OaQ==",
   "success": true,
   "projectFilePath": "/Users/louisdumont/RiderProjects/Design Pattern/Projet/ESGI.DesignPattern.Projet/ESGI.DesignPattern.Projet.Tests/ESGI.DesignPattern.Projet.Tests.csproj",
   "expectedPackageFiles": [
@@ -94,9 +94,7 @@
     "/Users/louisdumont/.nuget/packages/xunit.extensibility.core/2.4.1/xunit.extensibility.core.2.4.1.nupkg.sha512",
     "/Users/louisdumont/.nuget/packages/xunit.extensibility.execution/2.4.1/xunit.extensibility.execution.2.4.1.nupkg.sha512",
     "/Users/louisdumont/.nuget/packages/xunit.runner.console/2.4.1/xunit.runner.console.2.4.1.nupkg.sha512",
-    "/Users/louisdumont/.nuget/packages/xunit.runner.visualstudio/2.4.2/xunit.runner.visualstudio.2.4.2.nupkg.sha512",
-    "/Users/louisdumont/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "/Users/louisdumont/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+    "/Users/louisdumont/.nuget/packages/xunit.runner.visualstudio/2.4.2/xunit.runner.visualstudio.2.4.2.nupkg.sha512"
   ],
   "logs": []
 }

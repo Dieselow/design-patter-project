@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bzBPW3AtEvlCzRYxMxATFhKJpSvEDDthpZ8R77TJFExoMOGPYZyMHL9bnSEEcHFwEYxv1N5gRZNJCUq0IV/EUA==",
+  "dgSpecHash": "ZuyDA2jd2YxM8Qn5AmioHAaROCGYz2zhDmNJVjZt4UqUHMfjAGKThY30mdureIm32n8S2Q4fxeX9YTPbAO59lg==",
   "success": true,
   "projectFilePath": "/Users/louisdumont/RiderProjects/Design Pattern/Projet/ESGI.DesignPattern.Projet/ESGI.DesignPattern.Projet/ESGI.DesignPattern.Projet.csproj",
-  "expectedPackageFiles": [
-    "/Users/louisdumont/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "/Users/louisdumont/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
