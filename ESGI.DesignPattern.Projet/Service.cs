@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace ESGI.DesignPattern.Projet
 {
     public class Service
     {
-        public List<Trip> GetTripsByUser(User user)
+        /*public List<Trip> GetTripsByUser(User user)
         {
             List<Trip> tripList = new List<Trip>();
             User loggedUser = UserSession.GetInstance().GetLoggedUser();
@@ -31,7 +29,19 @@ namespace ESGI.DesignPattern.Projet
             {
                 throw new UserNotLoggedInException();
             }
+        }*/
+
+        public List<Trip> GetTripsByUser(User user)
+        {
+            return user.GetTrips();
+        }
+
+        public List<Trip> GetUserFriendsTrips(User user)
+        {
+            var result = new List<Trip>();
+            var friends = user.GetFriends();
+            friends.ForEach(friend => { friend.GetTrips().ForEach(trip => { result.Add(trip); }); });
+            return result;
         }
     }
-   
 }
