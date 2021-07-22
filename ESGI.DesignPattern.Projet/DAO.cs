@@ -2,12 +2,12 @@
 
 namespace ESGI.DesignPattern.Projet
 {
-    public class DAO
+    public class UserDao : IDao
     {
-        public static List<Trip> FindTripsByUser(User user)
+        public List<Trip> FindTripsByUser(User user)
         {
             throw new DependendClassCallDuringUnitTestException(
-                        "TripDAO should not be invoked on an unit test.");
+                "TripDAO should not be invoked on an unit test.");
         }
     }
 }
