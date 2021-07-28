@@ -5,19 +5,19 @@ namespace ESGI.DesignPattern.Projet
 {
     public class Service
     {
-        public IUserDao Dao;
-        public IUserSession Session;
+        private readonly IUserDao _dao;
+        private readonly IUserSession _session;
 
         public Service(IUserDao dao, IUserSession session)
         {
-            Dao = dao;
-            Session = session;
+            _dao = dao;
+            _session = session;
         }
 
         public List<Trip> GetTripsByUser(User user)
         {
             List<Trip> tripList = new List<Trip>();
-            User loggedUser = Session.GetInstance().GetLoggedUser();
+            User loggedUser = _session.GetInstance().GetLoggedUser();
             bool isFriend = false;
             try
             {
@@ -34,7 +34,7 @@ namespace ESGI.DesignPattern.Projet
 
                     if (isFriend)
                     {
-                        tripList = Dao.FindTripsByUser(user);
+                        tripList = _dao.FindTripsByUser(user);
                     }
 
                     return tripList;
