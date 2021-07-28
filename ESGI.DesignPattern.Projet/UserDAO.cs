@@ -2,7 +2,7 @@
 
 namespace ESGI.DesignPattern.Projet
 {
-    public class UserDao : IDao
+    public class UserDao : IUserDao
     {
         public List<Trip> FindTripsByUser(User user)
         {

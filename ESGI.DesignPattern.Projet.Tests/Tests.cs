@@ -31,7 +31,7 @@ namespace ESGI.DesignPattern.Projet.Tests
         }
     }
 
-    public class TestDao : IDao
+    public class TestDao : IUserDao
     {
         public List<Trip> FindTripsByUser(User user)
         {

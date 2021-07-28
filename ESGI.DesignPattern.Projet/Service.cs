@@ -5,10 +5,10 @@ namespace ESGI.DesignPattern.Projet
 {
     public class Service
     {
-        public IDao Dao;
+        public IUserDao Dao;
         public IUserSession Session;
 
-        public Service(IDao dao, IUserSession session)
+        public Service(IUserDao dao, IUserSession session)
         {
             Dao = dao;
             Session = session;
