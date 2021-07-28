@@ -16,35 +16,22 @@ namespace ESGI.DesignPattern.Projet
 
         public List<Trip> GetTripsByUser(User user)
         {
-            List<Trip> tripList = new List<Trip>();
-            User loggedUser = _session.GetInstance().GetLoggedUser();
-            bool isFriend = false;
+            var emptyTripList = new List<Trip>();
+            var loggedUser = _session.GetLoggedUser();
             try
             {
-                if (loggedUser != null)
+                if (loggedUser == null) throw new UserNotLoggedInException();
+                
+                foreach (var friend in user.GetFriends())
                 {
-                    foreach (User friend in user.GetFriends())
-                    {
-                        if (friend.Equals(loggedUser))
-                        {
-                            isFriend = true;
-                            break;
-                        }
-                    }
-
-                    if (isFriend)
-                    {
-                        tripList = _dao.FindTripsByUser(user);
-                    }
-
-                    return tripList;
+                    if (friend.Equals(loggedUser)) return _dao.FindTripsByUser(user);
                 }
-            }
-            catch (Exception exception)
+            }catch(Exception exception)
             {
                 Console.Write(exception.Message);
             }
-            throw new UserNotLoggedInException();
+
+            return emptyTripList;
         }
     }
 }

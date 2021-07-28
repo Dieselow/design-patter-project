@@ -15,11 +15,6 @@ namespace ESGI.DesignPattern.Projet.Tests
             User = user;
         }
 
-        public IUserSession GetInstance()
-        {
-            return this;
-        }
-
         public bool IsUserLoggedIn(User user)
         {
             return true;

@@ -2,20 +2,7 @@ namespace ESGI.DesignPattern.Projet
 {
     public class UserSession: IUserSession
     {
-        private static readonly UserSession userSession = new();
-
         private UserSession() { }
-
-        public static UserSession GetInstance()
-        {
-            return userSession;
-        }
-
-        IUserSession IUserSession.GetInstance()
-        {
-            return GetInstance();
-        }
-
         public bool IsUserLoggedIn(User user)
         {
             throw new DependendClassCallDuringUnitTestException(
